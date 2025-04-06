@@ -28,7 +28,7 @@ Modeling:
 - Deep Learning: Implemented EEGNet, a CNN architecture tailored for EEG
 Evaluation:
 - Accuracy, confusion matrix, and overfitting analysis
-- 
+
 ## Discussed challenges with generalization on limited data:
 Technologies Used
 - Python, JupyterLab
