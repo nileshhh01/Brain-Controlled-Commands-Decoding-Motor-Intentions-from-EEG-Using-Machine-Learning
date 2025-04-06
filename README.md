@@ -57,5 +57,18 @@ To classify imagined motor tasks (like left-hand vs right-hand movement) using E
 -  ├── models/ # Saved models (if any) │ 
 -  ├── figures/ # CSP filters, EEG signal plots, etc. │ 
 -  ├── requirements.txt # All required Python packages 
--     └── README.md 
+-     └── README.md
+
+## 📊 Next Steps
+
+- Expand dataset using more subjects
+- Add data augmentation (noise, channel flipping)
+- Improve EEGNet generalization with cross-validation
+
+---
+
+## ✨ Credits
+
+- Dataset: PhysioNet EEG Motor Imagery
+- Deep learning: EEGNet by Lawhern et al. (2018)
 
