@@ -1,4 +1,4 @@
-# 🧠 Brain-Controlled Commands: Decoding Motor Intentions from EEG Using ML
+# 🧠 Brain-Controlled Commands(BCI): Decoding Motor Intentions from  Electroencephalogram (EEG) Using ML
 
 This project aims to decode human motor intentions (e.g., left or right hand movement) using EEG brain signals and machine learning techniques. It simulates a Brain-Computer Interface (BCI) system that can interpret imagined commands from raw EEG data.
 
