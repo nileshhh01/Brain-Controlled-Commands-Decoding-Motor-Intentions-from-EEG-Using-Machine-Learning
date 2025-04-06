@@ -1,18 +1,61 @@
-# 🧠 Brain-Controlled Commands(BCI): Decoding Motor Intentions from  Electroencephalogram (EEG) Using ML
+# 🧠 Brain-Controlled Commands: Decoding Motor Intentions from EEG
 
-This project aims to decode human motor intentions (e.g., left or right hand movement) using EEG brain signals and machine learning techniques. It simulates a Brain-Computer Interface (BCI) system that can interpret imagined commands from raw EEG data.
+This project explores the use of machine learning and deep learning to decode motor-related brain activity from EEG signals.
 
-## 📊 Dataset
-- [EEG Motor Movement/Imagery Dataset – PhysioNet](https://physionet.org/content/eegmmidb/1.0.0/)
+---
 
-## 🧪 ML Approach
-- Signal Processing with MNE
-- Feature Extraction (e.g., frequency bands)
-- Classification (e.g., Random Forest, SVM)
+## 📌 Project Goal
 
-## 📁 Project Structure
+To classify imagined motor tasks (like left-hand vs right-hand movement) using EEG recordings and recognize brain-driven commands — a key step toward Brain-Computer Interfaces (BCI).
 
-## 🚀 Goal
-Build a system to classify imagined left/right hand movement from EEG signals.
+---
 
-Stay tuned!
+## 🔬 Dataset
+
+- **Source:** [EEG Motor Movement/Imagery Dataset – PhysioNet](https://physionet.org/content/eegmmidb/1.0.0/)
+- **Data Format:** `.edf` (64-channel EEG recordings)
+- **Subjects:** Performing or imagining motor tasks (T1 = left hand, T2 = right hand)
+
+---
+
+## 🧪 What We Did
+
+### ✅ 1. EEG Preprocessing & Visualization
+- Loaded EEG `.edf` files using MNE
+- Extracted events and plotted signal segments
+- Visualized annotations (T1, T2) and time series
+
+### ✅ 2. Common Spatial Patterns (CSP)
+- Applied CSP for spatial feature extraction
+- Visualized topographic patterns for motor task discrimination
+- Trained classical ML models (LogReg, SVM)
+
+### ✅ 3. Deep Learning with EEGNet
+- Implemented EEGNet CNN architecture
+- Trained model on small dataset (limited generalization)
+- Plotted training/validation accuracy & loss
+
+---
+
+## ⚠️ Challenges Faced
+
+- Missing electrode coordinates → fixed using standard montages
+- Small dataset → EEGNet tended to overfit
+- Class imbalance in predictions → accuracy was misleading
+
+---
+
+## 📁 Folder Structure
+📁 Brain-Controlled-Commands-Decoding-Motor-Intentions-from-EEG-Using-Machine-Learning 
+-  ├── notebooks/ # Jupyter notebooks (Preprocessing, CSP, EEGNet) │ 
+-  ├── EEG_Preprocessing_and_Visualization.ipynb │ 
+-  ├── CSP_and_Channel_Analysis.ipynb │ 
+-     └── EEGNet_Deep_Learning_Model.ipynb │ 
+-  ├── data/ # Raw EDF EEG files │ 
+    └── s001r04.edf, ... │ 
+-  ├── scripts/ # Python scripts (future expansion) │ 
+-  ├── models/ # Saved models (if any) │ 
+-  ├── figures/ # CSP filters, EEG signal plots, etc. │ 
+-  ├── requirements.txt # All required Python packages 
+-     └── README.md 
+
